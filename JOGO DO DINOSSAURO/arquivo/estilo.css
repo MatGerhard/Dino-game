@@ -1,0 +1,41 @@
+body {
+    background-color: #f7fbfd;
+}
+.dinossauro{
+    bottom: 0;
+    position: absolute;
+    background-image: url('dino.png');
+    margin-left: 60px;
+    height: 60px;
+    width: 60px;
+}
+.obst{
+    bottom: 0;
+    position: absolute;
+    background-image: url('cactus2.png');
+    height: 60px;
+    width: 30px;
+}
+.fundo{
+    position: absolute;
+    bottom: 15%;
+    background-image: url('background.png');
+    background-repeat: repeat-x;
+    animation: slideright 600s infinite linear;
+    width: 100%;
+    height: 200px;
+}
+.game-over {
+    margin-top: 60px;
+    text-align: center;
+    color: rgb(78, 78, 78);
+    font-family: Tahoma;
+}
+@keyframes slideright {
+    from {
+        background-position: 27000%;
+    }
+    to{
+        background-position: 0;
+    }
+}
